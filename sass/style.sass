@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700")
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Montserrat', sans-serif
+
+#app
+  width: 100%
+  min-height: 100%
+  background: #F3C65E
+  position: absolute
+  #app-title
+    margin: 2.5vh 2.5vw 0 2.5vw
+    height: auto
+    text-align: center
+    clear: both
+  #input-area
+    float: left
+    margin: 2.5vh 2.5vw 5vh 2.5vw
+    width: 46.25vw
+    height: 85vh
+    overflow: hidden
+    & > h3
+      height: 5%
+      margin: 0
+    #editor
+      width: 100%
+      height: 95%
+      padding: 5px
+      resize: none
+      border: none
+      border-radius: 3px
+      font-size: 0.825em
+      outline: none
+  #output-area
+    float: right
+    margin: 2.5vh 2.5vw 5vh 0
+    width: 46.25vw
+    height: 85vh
+    & > h3
+      height: 5%
+      margin: 0
+    #preview
+      height: 95%
+      width: 100%
+      padding: 5px
+      background: #fff
+      border-radius: 3px
+      overflow: scroll
+
+@media screen and (max-width:900px)
+  #edit-area, #output-area
+    height: 65vh
+    width: 95vw
+
+  #edit-area
+    #editor
+      padding-bottom: 10px
+    & > h3
+      margin-bottom: 1vh
+
+  #output-area
+    float: left
+    margin: 0 2.5vw 5vh 2.5vw
+    h3
+      margin-bottom: 1vh

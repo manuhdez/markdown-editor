@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+#app {
+  width: 100%;
+  min-height: 100%;
+  background: #F3C65E;
+  position: absolute; }
+  #app #app-title {
+    margin: 2.5vh 2.5vw 0 2.5vw;
+    height: auto;
+    text-align: center;
+    clear: both; }
+  #app #input-area {
+    float: left;
+    margin: 2.5vh 2.5vw 5vh 2.5vw;
+    width: 46.25vw;
+    height: 85vh;
+    overflow: hidden; }
+    #app #input-area > h3 {
+      height: 5%;
+      margin: 0; }
+    #app #input-area #editor {
+      width: 100%;
+      height: 95%;
+      padding: 5px;
+      resize: none;
+      border: none;
+      border-radius: 3px;
+      font-size: 0.825em;
+      outline: none; }
+  #app #output-area {
+    float: right;
+    margin: 2.5vh 2.5vw 5vh 0;
+    width: 46.25vw;
+    height: 85vh; }
+    #app #output-area > h3 {
+      height: 5%;
+      margin: 0; }
+    #app #output-area #preview {
+      height: 95%;
+      width: 100%;
+      padding: 5px;
+      background: #fff;
+      border-radius: 3px;
+      overflow: scroll; }
+
+@media screen and (max-width: 900px) {
+  #edit-area, #output-area {
+    height: 65vh;
+    width: 95vw; }
+  #edit-area #editor {
+    padding-bottom: 10px; }
+  #edit-area > h3 {
+    margin-bottom: 1vh; }
+  #output-area {
+    float: left;
+    margin: 0 2.5vw 5vh 2.5vw; }
+    #output-area h3 {
+      margin-bottom: 1vh; } }
